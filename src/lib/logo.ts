@@ -1,3 +1,1 @@
-// @ts-ignore
-import logoUrl from "@logo";
-export { logoUrl };
+export const logoUrl = "/logo.png";

@@ -8,7 +8,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
-      "@logo": resolve(__dirname, "../foto capa/logo.png"),
     },
   },
   server: {
