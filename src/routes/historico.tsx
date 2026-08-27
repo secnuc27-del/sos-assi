@@ -134,7 +134,7 @@ export function HistoricoPage() {
                   <div className="w-20 shrink-0 bg-muted/30 flex items-center justify-center p-2 border-r border-border overflow-hidden">
                     {(h.fotoLocal || h.marca) ? (
                       <img
-                        src={h.fotoLocal || `/fotos/${h.marca} ${h.modelo}.webp`}
+                        src={h.fotoLocal || `${import.meta.env.BASE_URL}fotos/${h.marca} ${h.modelo}.webp`}
                         alt={h.equipamento}
                         className="w-16 h-16 object-contain rounded-lg"
                         onError={(e) => {

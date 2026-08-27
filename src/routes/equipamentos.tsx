@@ -198,7 +198,7 @@ export function EquipamentosPage() {
         <div className="mb-4 aspect-video w-full overflow-hidden rounded-lg bg-white/5 relative flex items-center justify-center p-2">
           {eq.fotoLocal || eq.marca ? (
             <img
-              src={eq.fotoLocal || `/fotos/${eq.marca} ${eq.modelo}.webp`}
+              src={eq.fotoLocal || `${import.meta.env.BASE_URL}fotos/${eq.marca} ${eq.modelo}.webp`}
               alt={`${eq.marca} ${eq.modelo}`}
               className="absolute inset-0 h-full w-full object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-md"
               onError={(e) => {

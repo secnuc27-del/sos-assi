@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import type { ReactNode } from "react";
 import { useAuth } from "./AuthProvider";
+import { logoUrl } from "@/lib/logo";
 
 const navItems = [
   { to: "/clientes", label: "Clientes", icon: Users },
@@ -32,7 +33,7 @@ export function Layout({ children }: { children?: ReactNode }) {
       <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col border-r border-sidebar-border bg-sidebar">
         <div className="border-b border-sidebar-border px-4 py-5 flex justify-center overflow-hidden h-24 items-center">
           <img 
-            src="/logo.png" 
+            src={logoUrl} 
             alt="SOS Reparo Logo" 
             className="w-[210px] max-w-none h-auto drop-shadow-sm mix-blend-multiply" 
             style={{ clipPath: "inset(0% 0 20% 0)", transform: "scale(1.05) translateY(6px)" }}

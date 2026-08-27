@@ -16,14 +16,14 @@ import {
 import { useState } from "react";
 
 const fotoEquipamento: Record<string, string> = {
-  "Dell Inspiron 15 3511": "/fotos/Dell Inspiron 15 3511.webp",
-  "Samsung Galaxy A54": "/fotos/Samsung Galaxy A54.webp",
-  "HP LaserJet M404": "/fotos/HP LaserJet M404.webp",
-  "Positivo Master D3400": "/fotos/Positivo Master D3400.webp",
-  "iPad 9ª Geração": "/fotos/Apple iPad 9ª Geração.webp",
-  "PlayStation 5": "/fotos/Sony PlayStation 5.webp",
-  "iphone 16 pro max": "/fotos/iphone 16 pro max.webp",
-  "Sony PlayStation 5": "/fotos/Sony PlayStation 5.webp",
+  "Dell Inspiron 15 3511": `${import.meta.env.BASE_URL}fotos/Dell Inspiron 15 3511.webp`,
+  "Samsung Galaxy A54": `${import.meta.env.BASE_URL}fotos/Samsung Galaxy A54.webp`,
+  "HP LaserJet M404": `${import.meta.env.BASE_URL}fotos/HP LaserJet M404.webp`,
+  "Positivo Master D3400": `${import.meta.env.BASE_URL}fotos/Positivo Master D3400.webp`,
+  "iPad 9ª Geração": `${import.meta.env.BASE_URL}fotos/Apple iPad 9ª Geração.webp`,
+  "PlayStation 5": `${import.meta.env.BASE_URL}fotos/Sony PlayStation 5.webp`,
+  "iphone 16 pro max": `${import.meta.env.BASE_URL}fotos/iphone 16 pro max.webp`,
+  "Sony PlayStation 5": `${import.meta.env.BASE_URL}fotos/Sony PlayStation 5.webp`,
 };
 
 // Parse DD/MM/YYYY to a Date for sorting (older = higher priority in queue)

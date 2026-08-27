@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "./AuthProvider";
 import { Lock, Eye, EyeOff, AlertCircle } from "lucide-react";
+import { logoUrl } from "@/lib/logo";
 
 export function LoginPage() {
   const { login } = useAuth();
@@ -105,7 +106,7 @@ export function LoginPage() {
               {/* Halo atrás da logo */}
               <div className="absolute inset-0 rounded-2xl bg-blue-500/10 blur-xl scale-150" />
               <img
-                src="/logo.png"
+                src={logoUrl}
                 alt="SOS Reparo"
                 className="relative h-36 w-auto object-contain drop-shadow-md"
                 style={{ clipPath: "inset(4% 0 18% 0)" }}

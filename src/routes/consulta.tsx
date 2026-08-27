@@ -141,7 +141,7 @@ export function ConsultaPage() {
                 <div className="sm:col-span-2 mb-2 overflow-hidden rounded-xl border border-border bg-background">
                   <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden bg-white/5 p-4">
                     <img
-                      src={resultado.fotoLocal || `/fotos/${resultado.equipamento}.webp`}
+                      src={resultado.fotoLocal || `${import.meta.env.BASE_URL}fotos/${resultado.equipamento}.webp`}
                       alt={resultado.equipamento}
                       className="h-full w-full object-contain drop-shadow-lg transition-transform duration-500 hover:scale-105"
                       onError={(e) => {
